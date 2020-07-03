@@ -3,8 +3,9 @@ import {withRouter} from 'react-router-dom'
 import styles from './card.module.scss'
 
 const Card=({name,price,imageUrl,slug,history,match})=>{
+    const pr='product'
     return(
-    <div className={styles.collection_item} onClick={()=>history.push(`${match.url}${slug}`)}>
+    <div className={styles.collection_item} onClick={()=>history.push(`${match.url}${pr}/${slug}`)}>
         <div className={styles.image} 
           style={{backgroundImage:`url(${imageUrl})`}}
         />

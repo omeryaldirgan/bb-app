@@ -22,7 +22,7 @@ function App(props) {
         <div>
           <Route exact path="/" component={Preview} />
           <Route path="/login" component={Login} />
-          <Route path="/:id" component={PreviewItem} />
+          <Route path="/product/:id" component={PreviewItem} />
         </div>
       </Router>
     </AuthContext.Provider>

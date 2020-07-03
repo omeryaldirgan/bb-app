@@ -23,7 +23,6 @@ function App(props) {
           <Route exact path="/" component={Preview} />
           <Route path="/login" component={Login} />
           <Route path="/:id" component={PreviewItem} />
-          <PrivateRoute path="/admin" component={Login} />
         </div>
       </Router>
     </AuthContext.Provider>

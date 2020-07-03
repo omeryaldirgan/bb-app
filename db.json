@@ -10,7 +10,7 @@
     {
         "id":1,
         "name":"Developer T-shirt",
-        "slug":"red-tisort",
+        "slug":"developer-t-shirt",
         "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
         "imgUrl":"https://zupra.github.io/test/img/shop/1.jpg",
         "price1":10,
@@ -21,7 +21,7 @@
     {
         "id":2,
         "name":"Python T-Shirt",
-        "slug":"blue-tisort",
+        "slug":"python-t-shirt",
         "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
         "imgUrl":"https://zupra.github.io/test/img/shop/2.jpg",
         "price1":40,
@@ -32,7 +32,7 @@
     {
         "id":3,
         "name":"Jordan Jumpman Air",
-        "slug":"red-tisort-2",
+        "slug":"jordan-jumpman-air",
         "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
         "imgUrl":"https://zupra.github.io/test/img/shop/3.jpg",
         "price1":70,
@@ -43,7 +43,7 @@
     {
         "id":4,
         "name":"Tshigo",
-        "slug":"red-tisort-3",
+        "slug":"tshigo",
         "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
         "imgUrl":"https://zupra.github.io/test/img/shop/4.jpg",
         "price1":110,
@@ -52,8 +52,8 @@
         "stock":100
     }, {
         "id":5,
-        "name":"United Colors ",
-        "slug":"red-tisort-4",
+        "name":"United Colors",
+        "slug":"united-colors",
         "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
         "imgUrl":"https://zupra.github.io/test/img/shop/5.jpg",
         "price1":140,
@@ -64,7 +64,7 @@
     {
         "id":6,
         "name":"Jack & Jones",
-        "slug":"red-tisort-5",
+        "slug":"jack-jones",
         "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
         "imgUrl":"https://zupra.github.io/test/img/shop/6.jpg",
         "price1":170,
@@ -75,7 +75,7 @@
     {
         "id":7,
         "name":"Nike ACG",
-        "slug":"red-tisort-5",
+        "slug":"nike-acg",
         "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
         "imgUrl":"https://zupra.github.io/test/img/shop/7.jpg",
         "price1":10,
@@ -86,7 +86,7 @@
     {
         "id":7,
         "name":"Nike Quaresma",
-        "slug":"red-tisort-6",
+        "slug":"nike-quaresma",
         "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
         "imgUrl":"https://zupra.github.io/test/img/shop/8.jpg",
         "price1":34,

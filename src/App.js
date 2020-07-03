@@ -8,7 +8,7 @@ import { AuthContext } from "./context/auth";
 
 
 
-function App(props) {
+function App() {
   const existingTokens = JSON.parse(localStorage.getItem("tokens"));
   const [authTokens, setAuthTokens] = useState(existingTokens);
   

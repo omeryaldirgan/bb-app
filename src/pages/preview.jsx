@@ -20,7 +20,6 @@ class Preview extends React.Component{
     axios
       .get('http://localhost:3000/product')
       .then(({ data })=> {
-        console.log(data);
         this.setState(
           { items: data }
         );

@@ -1,0 +1,21 @@
+.navigation {
+    width: 100%;
+    line-height: 3em;
+    background: white;
+    display:flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    font-size: 1.8rem;
+    
+    &__logo {
+      text-decoration: none;
+      font-weight: bold;
+      color: black;
+      font-size: 1.3rem;
+      
+      &:hover, 
+      &:focus {
+        color: #90091e;
+      }
+    }
+  }

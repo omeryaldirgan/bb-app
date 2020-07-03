@@ -1,0 +1,22 @@
+.login{
+    background: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #081825eb;
+    
+    &-card{
+        flex-direction: column;
+        display: flex;
+        width: 300px;
+        padding: 20px;
+    }
+    h3{
+        color: #fff;
+        text-align: center;
+        padding: 15px 0;
+        font-size: 1.9em;
+    }
+}

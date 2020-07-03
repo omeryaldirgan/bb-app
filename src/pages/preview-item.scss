@@ -1,0 +1,132 @@
+ $color-mid: #0c1f2e;
+ $color-dark: #081825;
+ $color-light: lighten($color-dark, 20);
+ $color-signal: #cb2140;
+ $color-warning: #90091e;
+
+ body {
+   background: white;
+   color: $color-dark;
+   min-height: 100vh;
+   -webkit-font-smoothing: antialiased;
+   font-size: 10px;
+ }
+ .col {
+   width: 50%;
+   overflow-y: scroll;
+ }
+ 
+ .container {
+   display: flex;
+   justify-content: center;
+   height: calc(100vh - 54px);
+   overflow: hidden;
+ }
+ .sizing-top {
+   min-height: 62vh;
+ }
+ 
+ .product {
+   &__column {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     padding-bottom: 4rem;
+   }
+   &__top {
+     padding-top: 4rem;
+     padding-bottom: 1rem;
+   }
+   &__header {
+     text-align: center;
+   }
+   &__title {
+     font-weight: bold;
+     text-transform: uppercase;
+     margin: 0 0 0.2em;
+     font-size: 2rem;
+     line-height: 1.25;
+     
+     span {
+       font-size: 1.2em;
+       display: block;
+       clear: both;
+     }
+   }
+   &__price {
+     font-size: 1.7rem;
+     font-weight: 200;
+   }
+   &__subheader {
+     font-size: 2rem;
+     font-weight: bold;
+   }
+   &__media {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding-top: 1rem;
+   }
+   &__image {
+     max-width: 40%;
+     height: auto;
+     transform: scaleX(-1);
+   }
+   &__info {
+     margin-top: 10px;
+     margin-bottom: 10px;
+     * {
+       font-size: 1.1rem;
+       margin: 1rem;
+     }
+   }
+   &__props-title {
+     text-transform: uppercase;
+     font-size: 1.5rem;
+   }
+   &__props {
+     list-style: none;
+     font-size: 1.3rem;
+     margin-bottom: 4rem;
+   }
+   &__stats {
+     position: relative;
+     display:flex;
+     justify-content: center;
+     align-items: center;
+   }
+   &__stats-title {
+     font-size: 1.3rem;
+     font-weight: bold;
+     text-transform: uppercase;
+   }
+   &__stats-rating {
+     position: absolute;
+   }
+   &__stats-graph {
+     stroke: $color-dark;
+     stroke-width: 3;
+     fill: transparent;
+         transform: rotate(-90deg);
+     transform-origin: center center;
+   }
+   &__buttons {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     margin-top: 1.5em;
+   }
+ }
+ 
+
+ .warning {
+   color: $color-warning;
+ }
+ 
+ .info {
+   color: $color-light;
+ }
+ 

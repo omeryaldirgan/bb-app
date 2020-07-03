@@ -1,0 +1,98 @@
+{
+  "accounts": [
+    {
+      "username": "yaldirgan@hotmail.com",
+      "password": "omer123",
+      "id": 1
+    }
+  ],
+  "product":[
+    {
+        "id":1,
+        "name":"Developer T-shirt",
+        "slug":"red-tisort",
+        "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+        "imgUrl":"https://zupra.github.io/test/img/shop/1.jpg",
+        "price1":10,
+        "price2":20,
+        "price3":30,
+        "stock":100
+    },
+    {
+        "id":2,
+        "name":"Python T-Shirt",
+        "slug":"blue-tisort",
+        "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+        "imgUrl":"https://zupra.github.io/test/img/shop/2.jpg",
+        "price1":40,
+        "price2":50,
+        "price3":60,
+        "stock":100
+    },
+    {
+        "id":3,
+        "name":"Jordan Jumpman Air",
+        "slug":"red-tisort-2",
+        "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+        "imgUrl":"https://zupra.github.io/test/img/shop/3.jpg",
+        "price1":70,
+        "price2":80,
+        "price3":90,
+        "stock":100
+    },
+    {
+        "id":4,
+        "name":"Tshigo",
+        "slug":"red-tisort-3",
+        "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+        "imgUrl":"https://zupra.github.io/test/img/shop/4.jpg",
+        "price1":110,
+        "price2":120,
+        "price3":130,
+        "stock":100
+    }, {
+        "id":5,
+        "name":"United Colors ",
+        "slug":"red-tisort-4",
+        "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+        "imgUrl":"https://zupra.github.io/test/img/shop/5.jpg",
+        "price1":140,
+        "price2":150,
+        "price3":160,
+        "stock":100
+    },
+    {
+        "id":6,
+        "name":"Jack & Jones",
+        "slug":"red-tisort-5",
+        "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+        "imgUrl":"https://zupra.github.io/test/img/shop/6.jpg",
+        "price1":170,
+        "price2":180,
+        "price3":190,
+        "stock":100
+    },
+    {
+        "id":7,
+        "name":"Nike ACG",
+        "slug":"red-tisort-5",
+        "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+        "imgUrl":"https://zupra.github.io/test/img/shop/7.jpg",
+        "price1":10,
+        "price2":20,
+        "price3":30,
+        "stock":100
+    },
+    {
+        "id":7,
+        "name":"Nike Quaresma",
+        "slug":"red-tisort-6",
+        "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+        "imgUrl":"https://zupra.github.io/test/img/shop/8.jpg",
+        "price1":34,
+        "price2":44,
+        "price3":54,
+        "stock":100
+    }
+]
+}

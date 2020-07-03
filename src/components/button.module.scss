@@ -1,0 +1,19 @@
+
+.button{
+     font-size: 1.4rem;
+     color: #fff;
+     padding: 1.3em 2em 1.2em;
+     background-color: #081825;
+     text-transform: uppercase;
+     font-weight: 700;
+     letter-spacing: 0.12em;
+     line-height: 1;
+     border:none;
+     white-space: nowrap;
+     &:hover, 
+     &:focus {
+       outline: none;
+       background-color: #90091e;
+     }
+    
+}

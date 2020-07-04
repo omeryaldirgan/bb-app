@@ -1,7 +1,6 @@
 import React from 'react';
 
 import axios from 'axios';
-
 import Card from '../components/card'
 import Button from '../components/button'
 import './preview.scss'
@@ -27,7 +26,6 @@ class Preview extends React.Component{
       .catch((err)=> {console.log(err)})
   }
    handleClick=()=>{
-       console.log(this.state.updatePrice);
         if(this.state.updatePrice==1){
           this.setState({updatePrice:2})
         }else if(this.state.updatePrice==2){

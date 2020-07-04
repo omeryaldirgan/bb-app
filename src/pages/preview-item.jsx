@@ -19,7 +19,6 @@ class PreviewItem extends React.Component{
     {this.setState({item: res.data[0]});});
   }
   render(){
-    console.log(this.props);
     const {name,description,imgUrl,price1,stock}=this.state.item;
     return(
       <div>

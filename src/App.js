@@ -1,5 +1,5 @@
 import React, { useState }  from 'react';
-import { BrowserRouter as Router, Link, Route } from "react-router-dom";
+import { BrowserRouter as Router, Redirect, Route } from "react-router-dom";
 import PrivateRoute from './PrivateRoute';
 import Login from './pages/login'
 import Preview from './pages/preview'
@@ -16,10 +16,15 @@ function App() {
     localStorage.setItem("tokens", JSON.stringify(data));
     setAuthTokens(data);
   }
+  
+ 
   return (
       <AuthContext.Provider value={{ authTokens, setAuthTokens: setTokens }}>
       <Router>
         <div>
+          {
+            authTokens?<Redirect to="/" />:<Redirect to="/login" />
+          }
           <Route exact path="/" component={Preview} />
           <Route path="/login" component={Login} />
           <Route path="/product/:id" component={PreviewItem} />

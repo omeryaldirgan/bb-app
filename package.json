@@ -12,6 +12,7 @@
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
+    "react-toastify": "^6.0.8",
     "styled-components": "^5.1.1"
   },
   "scripts": {
@@ -20,7 +21,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "start-auth": "node server.js"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -43,6 +45,8 @@
     "@storybook/addons": "^5.3.19",
     "@storybook/preset-create-react-app": "^3.1.2",
     "@storybook/react": "^5.3.19",
-    "dotenv": "^8.2.0"
+    "dotenv": "^8.2.0",
+    "json-server": "^0.16.1",
+    "json-server-auth": "^2.0.2"
   }
 }

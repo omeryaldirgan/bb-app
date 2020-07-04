@@ -3,7 +3,6 @@ import {Redirect } from "react-router-dom";
 import axios from 'axios';
 import Input from '../components/input'
 import Button from '../components/button'
-import BaseUrl from '../components/custom'
 import { useAuth } from "../context/auth";
 
 import './login.scss'
@@ -13,11 +12,17 @@ function Login() {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
     const { setAuthTokens } = useAuth();
-
-function handleSubmit(event) {
-    event.preventDefault();
-    axios.post(BaseUrl,{username,password}).then(result => {
-        if (result.status === 200) {
+function handleSubmit(event) { 
+    axios
+    .post(
+        "http://localhost:3000/users",
+        {
+            email: username,
+            password: password
+        }
+      )
+      .then(result => {
+        if (result.status === 200 && result.data.length>0) {
             setAuthTokens(result.data);
             setLoggedIn(true);
         } else {
@@ -25,11 +30,13 @@ function handleSubmit(event) {
         }
     }).catch(e => {
         setIsError(true);
-        console.log("hata");
+        console.log(e);
     });
+    
+    event.preventDefault();
     }
     if (isLoggedIn) {
-    return <Redirect to="/" />;
+       return <Redirect to="/" />;
     }
 return(
     <div className="login">
@@ -37,24 +44,29 @@ return(
         <div className="login-card">
             <h3>Sign in to your account</h3>
                     <Input
+                        name="email"
                         required
-                        type="username"
+                        type="email"
                         value={username}
                         onChange={e => {
                             setUsername(e.target.value);
                         }}
-                        placeholder="email"
+                        placeholder="E-mail"
                     />
                     
                     <Input
+                        name="password"
                         required
                         type="password"
                         value={password}
                         onChange={e => {
                             setPassword(e.target.value);
                         }}
-                        placeholder="password"
+                        placeholder="Password"
                     />
+                    {
+                        isError && <span>Incorrect email or password.</span>
+                    }
                     <Button  type="submit">Sign In</Button>
         </div>
         </form>

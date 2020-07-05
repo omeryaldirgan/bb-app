@@ -22,7 +22,7 @@ class PreviewItem extends React.Component{
     const {name,description,imgUrl,price1,stock}=this.state.item;
     return(
       <div>
-      <Nav>PRODUCT DETAIL</Nav>
+      <Nav>PRODUCT LIST</Nav>
       <div className="container">
       <div className="col product">
               <div className="product__top sizing-top">
